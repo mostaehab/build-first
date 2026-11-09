@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "build-first",
+  "description": "Build first, configure last.",
+  "owner": { "name": "dev@ra.software" },
+  "plugins": [
+    {
+      "name": "build-first",
+      "description": "Stops Claude asking for API keys mid-build. Codes against env vars, collects every secret into CONFIGURATION_REQUIREMENTS.md, configures at the end.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

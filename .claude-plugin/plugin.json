@@ -1,0 +1,6 @@
+{
+  "name": "build-first",
+  "version": "1.0.0",
+  "description": "Credentials never block building. Claude codes the whole feature against env vars, logs every key it needs to CONFIGURATION_REQUIREMENTS.md, and configures at the end.",
+  "hooks": ["./hooks/hooks.json"]
+}

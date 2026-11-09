@@ -1,0 +1,29 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -p \"require('fs').readFileSync(process.env.CLAUDE_PLUGIN_ROOT + '/rules/build-first.md', 'utf8')\"",
+            "timeout": 15,
+            "statusMessage": "Loading build-first mode..."
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -p \"require('fs').readFileSync(process.env.CLAUDE_PLUGIN_ROOT + '/rules/build-first.md', 'utf8')\"",
+            "timeout": 15,
+            "statusMessage": "Loading build-first mode..."
+          }
+        ]
+      }
+    ]
+  }
+}
